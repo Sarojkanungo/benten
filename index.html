@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben ten</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images cartoon.webp') no-repeat center center/cover;
+      position: relative;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 80px;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      width: 120px;
+      height: auto;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4b5c;
+    }
+
+    nav button {
+      padding: 10px 25px;
+      border-radius: 25px;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #ff4b5c;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      transform: translateY(-50%);
+      max-width: 600px;
+    }
+
+    .content h2 {
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .content h2 span {
+      color: #ff4b5c;
+    }
+
+    .content p {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .content .buttons {
+      margin-top: 30px;
+    }
+
+    .content .buttons button {
+      padding: 12px 35px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+
+    .watch-now {
+      background: #ff4b5c;
+      color: #fff;
+    }
+
+    .watch-now:hover {
+      background: #fff;
+      color: #ff4b5c;
+      box-shadow: 0 0 15px #ff4b5c;
+    }
+
+    .know-more {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .know-more:hover {
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 15px #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 30px;
+      }
+
+      .content {
+        left: 20px;
+        right: 20px;
+        text-align: center;
+      }
+
+      .content h2 {
+        font-size: 32px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="./cartoon logo.jpg" class="logo" alt="Cartoon Logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cartoons</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <button>More</button>
+    </nav>
+
+    <div class="content">
+      <h2>Discover the <span>magic</span> of animated joy</h2>
+      <p>Step into the colorful world of cartoons where imagination meets entertainment. Watch your favorite characters come to life!</p>
+      <div class="buttons">
+        <button class="watch-now">Watch Now</button>
+        <button class="know-more">Know More</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
